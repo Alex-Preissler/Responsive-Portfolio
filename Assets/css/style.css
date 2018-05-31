@@ -57,6 +57,8 @@ h3 {
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   overflow: auto;
   color: #fff;
   background: #fff;
@@ -76,7 +78,12 @@ h3 {
   text-decoration: none;
   background: #4aaaa5;
 }
+ #logo-bar {
 
+    max-width: 100%;
+    text-align: left;
+
+ }
 nav {
   float: right;
   margin-top: 25px;
@@ -122,12 +129,15 @@ h3, h2 {
 #main-container {
   padding-top: 130px;
   min-height: calc(100vh - 70px);
+  max-width: 100%;
+  float: left;
+  margin: 0;
+  padding-left: 2.5%;
 }
 
 .main-section {
   float: left;
-  width: 100%;
-  max-width: 960px;
+  max-width: 100%;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
@@ -139,13 +149,18 @@ h3, h2 {
 .work {
   position: relative;
   float: left;
-  width: 274px;
-  margin: 20px 0 25px;
+  max-width: 45%;
+  height: auto;
+  margin-top: 20px; 
   overflow: auto;
+  margin-right: 0px;
+  margin-left: 2.5%;
+
 }
 
 .work:nth-child(even) {
-  margin-right: 40px;
+  margin-left: 0px;
+  margin-right: 2.5%;
 }
 
 .work img {
@@ -214,4 +229,159 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and ( min-width: 980px ) {
+
+  #no-float{
+    float: none;
+    max-width: 66%;
+  }
+
+  #formbox {
+    max-width: 66%;
+  }
+
+  .work {
+    position: relative;
+    float: left;
+    max-width: 45%;
+    height: auto;
+    margin-top: 20px; 
+    overflow: auto;
+    margin-right: 0px;
+    margin-left: 2.5%;
+  
+  }
+  
+  .work:nth-child(even) {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+  }
+}
+
+
+
+@media screen and (max-width: 979px) {
+
+  #main-img{
+    width: 50%;
+    margin-left: 0%;
+    
+  }
+
+  #main-section{
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+  }
+
+  #main-container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  .work {
+    position: relative;
+    float: left;
+    max-width: 45%;
+    height: auto;
+    margin-top: 20px; 
+    overflow: auto;
+    margin-right: 0px;
+    margin-left: 2.5%;
+  
+  }
+  
+  .work:nth-child(even) {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+  }
+
+  .main-section{
+    float: left;
+  }
+    
+  #formbox{
+    max-width: 100%;
+   
+  }
+  #no-float{
+    float: none;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  #masthead{
+    padding: 0;
+  }
+  #logo-bar{
+    background-color: #4aaaa5;
+    text-align: center;
+}
+
+#logo{
+  float: none;
+  padding: 0;
+
+}
+
+
+nav {
+  float: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#a1 {
+ margin: 0;
+ padding: 0;
+}
+
+#content-bar {
+  width: 100%;
+}
+
+#main-container {
+  padding-top: 164px;
+}
+
+#main-img{
+  float: none;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+.work {
+  position: relative;
+  float: left;
+  max-width: 100%;
+  margin: 20px 0 0 0;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#formbox{
+  float: left;
+  max-width: 100%;
+  
+}
+#no-float{
+  float: none;
+  max-width: 100%;
+}
+
 }
